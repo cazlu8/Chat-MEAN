@@ -1,0 +1,7 @@
+.tmp
+.DS_Store
+.DS_Store?
+node_module/
+public/vendor/
+dist/
+script/

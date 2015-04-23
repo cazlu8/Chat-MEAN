@@ -1,0 +1,27 @@
+<h1 class="text-center">Contact</h1>
+<p ng-show="message.text">{{message.text}}</p>
+<form ng-submit="save()">
+	<div class="form-group">
+		<label for="name">Complete Name</label>
+		<input type="text" class="form-control" id="name" name="name" required ng-model="contact.name">
+	</div>
+	
+	<div class="form-group">
+		<label for="email">Email</label>
+		<div class="input-group">
+			<span class="input-group-addon">@</span>
+			<input type="email" class="form-control" id="email" name="email" required ng-model="contact.email" placeholder="email@exemplo.com">
+		</div>
+	</div>
+	<div>
+		<button type="submit" class="btn btn-primary">Save</button>
+		<a href="#/" class="btn btn-default">Come Back</a>
+	</div>
+</form>
+<div class="form-group">
+	<label for = "emergency">Contact Of Emergency</label>
+	<select id="emergency" class="form-control"
+		ng-model="contact.emergency"
+		ng-options="contact._id as contact.name for contact in contacts">
+	</select>
+</div>

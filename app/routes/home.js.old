@@ -1,0 +1,11 @@
+﻿var homeController = app.controllers.home;
+
+module.exports = function(app) {
+
+	app.router('/')
+		.get(homeController.index)
+	app.router('/index')
+		.get(homeController.index)
+
+
+};

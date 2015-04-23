@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html ng-app="chat">
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<meta charset="utf-8" />
+		<!-- build:css css/index.min.css -->
+		<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css">
+		<!-- endbuild -->
+	</head>
+	<body class="container">
+	<div class="text-right">
+		<p>Logged how: <span id="user-logged">
+			<%=userLoged %>
+		</span></p>
+		<a href="/logout">Log Out</a>
+	</div>
+		<div ng-view>
+			
+		</div>
+		<!-- build:js js/index.min.js -->
+		<script src="vendor/angular/angular.js"></script>
+		<script src="vendor/angular-route/angular-route.min.js"></script>
+		<script src="vendor/angular-resource/angular-resource.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/services/ContactsService.js"></script>
+		<script src="js/controllers/contactsController.js"></script>
+		<script src="js/controllers/contactController.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>
