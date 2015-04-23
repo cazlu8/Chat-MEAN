@@ -1,0 +1,31 @@
+<div class="jumbotron">
+	<p ng-show="message.text">
+		{{message.text}}
+	</p>
+	<h1 class="text-cent">Welcome to the chat!</h1>
+</div>
+<a ng-href="#/contact" class="btn btn-primary">New Contact</a>
+<input  ng-model="filterContact" type="search" placeholder="part of name">
+<p ng-show="contacts.length">Contacts registered: {{contacts.length}}</p>
+<p class="text-info" ng-hide="contacts.length">list of contact is empty</p>
+<div class="table-responsive">
+	<table class="table table-hover">
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Contact Of Emergecy</th>
+			<th class="text-center">Action</th>
+		</tr>
+		<tr ng-repeat="contact in contacts | filter: filterContact">
+			<td>
+				<a ng-href="#/contact/{{contact._id}}">{{contact.name}}</a>
+			</td>
+			
+			<td>{{contact.email}}</td>
+			<td>{{contact.emergency.name}}</td>
+			<td class="text-center">
+				<button class="btn btn-warning" ng-click="remove(contact)">Remove</button>
+			</td>
+		</tr>
+	</table>
+</div>

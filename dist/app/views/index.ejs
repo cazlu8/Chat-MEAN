@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html ng-app="chat">
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/index.min.css">
+	</head>
+	<body class="container">
+	<div class="text-right">
+		<p>Logged how: <span id="user-logged">
+			<%=userLoged %>
+		</span></p>
+		<a href="/logout">Log Out</a>
+	</div>
+		<div ng-view>
+			
+		</div>
+		<script src="js/index.min.js"></script>
+	</body>
+</html>
