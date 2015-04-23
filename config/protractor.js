@@ -6,7 +6,7 @@ exports.config = {
 		browser.driver.findElement(by.id('login_field'))
 			.sendKeys('cazlu8');
 		browser.driver.findElement(by.id('password'))
-			.sendKeys('werteyaryeaery');
+			.sendKeys('werteyaryeaeryuuyh');
 		browser.driver.findElement(by.name('commit')).click();
 	}
 
