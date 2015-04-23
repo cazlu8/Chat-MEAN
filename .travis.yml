@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - 0.12
 notifications:
--cazlu_bios@hotmail.com
+- cazlu_bios@hotmail.com
 before_install:
 - npm install -g bower@1.3
 - npm install -g grunt-cli@0.1
