@@ -22,7 +22,7 @@ var contactPage = function() {
 
 	this.getMessageStatus = function() {
 		return element(by.binding('message.text')).getText();
-	}
+	};
 
 }
 

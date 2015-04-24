@@ -1,6 +1,6 @@
-var passport = require('passport');
-var GitHubStrategy = require('passport-github').Strategy;
-var mongoose = require('mongoose');
+var passport = require('passport'),
+GitHubStrategy = require('passport-github').Strategy,
+mongoose = require('mongoose');
 
 module.exports = function() {
 	
